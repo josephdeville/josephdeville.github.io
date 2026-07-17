@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joseph DeVille — GTM Engineer</title>
+<meta name="description" content="GTM Engineer building internal GTM systems and AI-powered workflows. Production systems credited with $1.57M in pipeline.">
+<style>
+:root{
+  --bg:#0b0e14; --panel:#11151f; --line:#1f2634; --text:#e8ecf3; --muted:#9aa4b5;
+  --accent:#5b9cff; --accent2:#7ee2b8;
+}
+@media (prefers-color-scheme: light){
+  :root{ --bg:#fafbfd; --panel:#ffffff; --line:#e5e9f0; --text:#15181e; --muted:#5b6472; --accent:#2563eb; --accent2:#0f9d6c; }
+}
+*{box-sizing:border-box;margin:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header{padding:88px 0 56px}
+.kicker{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+h1{font-size:44px;line-height:1.1;margin:10px 0 14px;letter-spacing:-.02em}
+.sub{color:var(--muted);font-size:19px;max-width:640px}
+.cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{border:1px solid var(--line);color:var(--text)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:22px;margin-bottom:20px;letter-spacing:-.01em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.stat .n{font-size:30px;font-weight:700;color:var(--accent2)}
+.stat .l{color:var(--muted);font-size:14px;margin-top:4px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card h3{font-size:16px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14.5px}
+.card a{color:var(--accent);text-decoration:none;font-weight:600;font-size:14px}
+.xp{display:grid;gap:6px;padding:16px 0;border-bottom:1px solid var(--line)}
+.xp:last-child{border-bottom:none}
+.xp .role{font-weight:650}
+.xp .co{color:var(--accent)}
+.xp .when{color:var(--muted);font-size:14px}
+.xp p{color:var(--muted);font-size:14.5px;max-width:700px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 14px;font-size:13.5px;color:var(--muted)}
+footer{padding:48px 0 64px;color:var(--muted);font-size:14px}
+footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">GTM Engineer · Houston, TX · Remote</div>
+  <h1>Joseph DeVille</h1>
+  <p class="sub">I build the internal systems, applications, and AI-powered workflows that make go-to-market teams faster. Instrumented, validated before they touch users, and safe against the databases they read and write.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:joseph.deville@cloudanditservices.com">Email me</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/joseph-deville/">LinkedIn</a>
+    <a class="btn ghost" href="https://github.com/josephdeville">GitHub</a>
+  </div>
+</header>
+
+<section>
+  <h2>Numbers that held up in production</h2>
+  <div class="stats">
+    <div class="stat"><div class="n">$1.57M</div><div class="l">pipeline influenced by GTM systems I designed and shipped at Cortex</div></div>
+    <div class="stat"><div class="n">40%</div><div class="l">QA time cut with AI agents testing GTM workflows at Rainforest QA</div></div>
+    <div class="stat"><div class="n">40%</div><div class="l">hard-bounce reduction from automated suppression and list hygiene</div></div>
+    <div class="stat"><div class="n">600+</div><div class="l">devices managed in a prior life as a cloud administrator</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>What I build</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Internal GTM products</h3>
+      <p>Slack apps, lead feeds, and dashboards that live inside the tools reps already use. At Cortex: an SE request-routing app the GTM org used daily and a signal-driven BDR lead feed integrating enrichment sources with Salesforce.</p>
+    </div>
+    <div class="card">
+      <h3>AI agents in production</h3>
+      <p>Agents and automations on Anthropic/OpenAI APIs, LangChain, CrewAI, and Trigger.dev covering enrichment, account research, and outreach. Structured context, tool calling, prompt caching, and evals, not demos.</p>
+    </div>
+    <div class="card">
+      <h3>Trust and validation</h3>
+      <p>Pre-production validation tooling: a demo preflight system checking Salesforce, Gong, Neon Postgres, and Linear integrations before every customer-facing session. Systems people can rely on.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Selected public work</h2>
+  <div class="cols" id="project-cards">
+    <div class="card">
+      <h3>GTM Context Engine</h3>
+      <p>TypeScript CLI + web UI: give it a company domain, get a full GTM strategy or tactical sales playbook (ICP segments, personas, battlecards, outreach sequences) generated with the Claude API. MIT licensed.</p>
+      <p style="margin-top:10px"><a href="https://github.com/josephdeville/ClaudeGTM">View on GitHub →</a></p>
+    </div>
+    <div class="card">
+      <h3>Closed-Lost Forensics</h3>
+      <p>Trigger.dev pipeline: Salesforce fires on Closed Lost, Gong transcripts are pulled, Claude runs a forensic root-cause analysis with prompt caching, and a Block Kit alert lands in Slack. Code private (employer data); walkthrough on request.</p>
+    </div>
+    <div class="card">
+      <h3>GTM Slack Assistant</h3>
+      <p>Slack Bolt + Block Kit app: role-aware daily nudges for AEs, BDRs, CSMs, and SEs, plus an interactive App Home with request routing. Ran daily for a production GTM org. Code private (team roster); walkthrough on request.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="xp"><span class="role">GTM Engineer · <span class="co">Cortex</span></span><span class="when">Oct 2025 – Jul 2026</span>
+    <p>In-house GTM engineer. Shipped production GTM systems credited with influencing $1.57M in pipeline, documented in a leadership-facing ops impact memo. Built the Slack SE routing app, signal-driven BDR feed, demo preflight validation, and POV/PFR automation. AI-native workflow end to end with Claude Code, custom skills, and MCP servers.</p></div>
+  <div class="xp"><span class="role">GTM Engineer · <span class="co">Ignyte Assurance</span></span><span class="when">Apr 2024 – Oct 2025</span>
+    <p>TypeScript applications orchestrating GTM workflows between marketing and sales systems. LangChain automation agents improving forecast accuracy and lead qualification efficiency by 30%.</p></div>
+  <div class="xp"><span class="role">RevOps Engineer · <span class="co">Rainforest QA</span></span><span class="when">Apr 2024 – Jan 2025</span>
+    <p>AI agents for automated GTM workflow testing (40% QA time reduction). Email sending infrastructure across multiple MAPs with automated bounce management. React/TypeScript executive dashboards.</p></div>
+  <div class="xp"><span class="role">SDR · <span class="co">Jamf</span></span><span class="when">Jul 2023 – Apr 2024</span>
+    <p>Exceeded monthly targets by 15%. The operator's view of pipeline, deal stages, and forecasting that my systems now serve.</p></div>
+  <div class="xp"><span class="role">Cloud Administrator · <span class="co">Ellucian</span></span><span class="when">Apr 2022 – Jun 2023</span>
+    <p>Cloud migrations (Exchange, SQL, web), hybrid infrastructure across 600+ devices, MDM for 500+ endpoints via Intune, Azure, and Jamf.</p></div>
+</section>
+
+<section>
+  <h2>Stack</h2>
+  <div class="pills">
+    <span class="pill">TypeScript / Node.js</span><span class="pill">Python</span><span class="pill">React</span>
+    <span class="pill">Anthropic / OpenAI APIs</span><span class="pill">Claude Code + MCP</span><span class="pill">LangChain / CrewAI</span>
+    <span class="pill">Trigger.dev</span><span class="pill">Salesforce (SOAP API)</span><span class="pill">HubSpot</span>
+    <span class="pill">Gong</span><span class="pill">Clay</span><span class="pill">Neon PostgreSQL</span>
+    <span class="pill">Make / Zapier / n8n</span><span class="pill">Signal-based outbound</span><span class="pill">Email infrastructure</span>
+  </div>
+</section>
+
+<footer>
+  <p>Joseph DeVille · <a href="mailto:joseph.deville@cloudanditservices.com">joseph.deville@cloudanditservices.com</a> · <a href="https://www.linkedin.com/in/joseph-deville/">linkedin.com/in/joseph-deville</a></p>
+  <p style="margin-top:6px">Clay Automated Outbound Certified · Microsoft Azure Solutions Associate · Cold Email Infrastructure Expert (Salesforge)</p>
+</footer>
+
+</div>
+</body>
+</html>
