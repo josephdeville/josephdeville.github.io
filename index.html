@@ -53,13 +53,50 @@ footer a{color:var(--accent);text-decoration:none}
 <header>
   <div class="kicker">GTM Engineer · Houston, TX · Remote</div>
   <h1>Joseph DeVille</h1>
-  <p class="sub">I build the internal systems, applications, and AI-powered workflows that make go-to-market teams faster. Instrumented, validated before they touch users, and safe against the databases they read and write.</p>
+  <p class="sub">Working GTM prototypes: research on booking, signal feeds, eval-gated briefs, pipeline measured against evidence. GitHub is the portfolio.</p>
   <div class="cta">
-    <a class="btn primary" href="mailto:josephdeville523@gmail.com">Email me</a>
-    <a class="btn ghost" href="https://www.linkedin.com/in/joseph-deville/">LinkedIn</a>
+    <a class="btn primary" href="https://josephdeville.github.io/foley-portfolio/demo/">Try Hermes</a>
+    <a class="btn ghost" href="https://jd-sanity-gtm-brief.netlify.app/">Account briefs</a>
+    <a class="btn ghost" href="https://forecast-evidence-engine.vercel.app/">Forecast evidence</a>
     <a class="btn ghost" href="https://github.com/josephdeville">GitHub</a>
   </div>
 </header>
+
+<section id="prototypes">
+  <h2>Live prototypes (no login)</h2>
+  <div class="cols">
+    <div class="card">
+      <h3>Deep Research + Hermes</h3>
+      <p>Click through research packet, persona, close plan, and learning variants. The booking-triggered agent Foley asked about, as a walkthrough (static HTML, no public LLM).</p>
+      <p style="margin-top:10px"><a href="https://josephdeville.github.io/foley-portfolio/demo/">Open demo →</a></p>
+    </div>
+    <div class="card">
+      <h3>GTM account intelligence</h3>
+      <p>Claude scores accounts, a coded eval gate publishes or holds, ranked queue in Sanity. Live from Content Lake.</p>
+      <p style="margin-top:10px"><a href="https://jd-sanity-gtm-brief.netlify.app/">Open live briefs →</a></p>
+    </div>
+    <div class="card">
+      <h3>Forecast evidence engine</h3>
+      <p>Commit is a claim. Gong-like calls are the evidence. Interactive CRO dashboard on synthetic data.</p>
+      <p style="margin-top:10px"><a href="https://forecast-evidence-engine.vercel.app/">Open dashboard →</a></p>
+    </div>
+    <div class="card">
+      <h3>Signal engines</h3>
+      <p>Public signals in, scored “who next” queue out. Same loop as DOT authority / fleet growth / renewals.</p>
+      <p style="margin-top:10px"><a href="https://planitroi-itad-signal-engine-hp.vercel.app/">ITAD sample →</a> · <a href="https://neo-signal-engine.vercel.app/">Neo →</a></p>
+    </div>
+    <div class="card">
+      <h3>AI SDR engine</h3>
+      <p>Clone and run: parallel research, evidence-gated writer, Slack approval, reply classification. Not hosted.</p>
+      <p style="margin-top:10px"><a href="https://github.com/josephdeville/ai-sdr-engine">Repo →</a></p>
+    </div>
+    <div class="card">
+      <h3>Cortex systems</h3>
+      <p>Five production GTM systems and the attribution designed in before they shipped ($1.57M influenced).</p>
+      <p style="margin-top:10px"><a href="https://joseph-deville-gtm-systems.vercel.app/">Open →</a></p>
+    </div>
+  </div>
+</section>
 
 <section>
   <h2>Numbers that held up in production</h2>
@@ -90,20 +127,20 @@ footer a{color:var(--accent);text-decoration:none}
 </section>
 
 <section id="projects">
-  <h2>Selected public work</h2>
+  <h2>Also runnable</h2>
   <div class="cols" id="project-cards">
     <div class="card">
       <h3>GTM Context Engine</h3>
-      <p>TypeScript CLI + web UI: give it a company domain, get a full GTM strategy or tactical sales playbook (ICP segments, personas, battlecards, outreach sequences) generated with the Claude API. MIT licensed.</p>
+      <p>CLI + local web UI: domain in, ICP / playbook / sequences out. Needs an Anthropic key. <code>npm run web</code>.</p>
       <p style="margin-top:10px"><a href="https://github.com/josephdeville/ClaudeGTM">View on GitHub →</a></p>
     </div>
     <div class="card">
       <h3>Closed-Lost Forensics</h3>
-      <p>Trigger.dev pipeline: Salesforce fires on Closed Lost, Gong transcripts are pulled, Claude runs a forensic root-cause analysis with prompt caching, and a Block Kit alert lands in Slack. Code private (employer data); walkthrough on request.</p>
+      <p>Trigger.dev: Closed Lost → Gong → Claude root-cause → Slack. Private (employer data). Walkthrough on request.</p>
     </div>
     <div class="card">
       <h3>GTM Slack Assistant</h3>
-      <p>Slack Bolt + Block Kit app: role-aware daily nudges for AEs, BDRs, CSMs, and SEs, plus an interactive App Home with request routing. Ran daily for a production GTM org. Code private (team roster); walkthrough on request.</p>
+      <p>Slack Bolt daily nudges and App Home routing for a production GTM org. Private (roster). Walkthrough on request.</p>
     </div>
   </div>
 </section>
